@@ -1,0 +1,25 @@
+
+@mixin navbar {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+
+        ul {
+            display: inline-block;
+
+            li {
+                display: inline-block;
+                
+                li, a{
+                    list-style: none;
+                    text-decoration: none;
+                }
+            }
+
+        }
+        
+    }
+    
+}

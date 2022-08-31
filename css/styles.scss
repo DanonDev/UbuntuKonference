@@ -1,3 +1,17 @@
-body {
-    background-color: white;
+@use "ubfont" as font;
+@use "pagecolors" as colors;
+@use "navstyle";
+
+@include font.mainFont;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: colors.$P-white;
+    font-family: font.$ubuntuFont;
 }
+
+@include navstyle.navbar;
+
+
